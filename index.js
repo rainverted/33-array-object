@@ -51,12 +51,12 @@ jonas.carPrice(1);
 jonas.carPrice(2);
 // Tesla S is purchased for 100000 Euros.
 
-// jonas.totalSpentForCars();
-// // KOMANTARAS: Litas -> Euras = 3.45
-// // Jonas has spent 101739.13 Euros for his cars.
+jonas.totalSpentForCars();
+// KOMANTARAS: Litas -> Euras = 3.45
+// Jonas has spent 101739.13 Euros for his cars.
 
-// jonas.totalSpentForApartments();
-// // Jonas has spent 500000 Euros for his apartments.
+jonas.totalSpentForApartments();
+// Jonas has spent 500000 Euros for his apartments.
 
 // jonas.totalSpendings();
 // // Jonas has spent 601739.13 Euros tottaly.

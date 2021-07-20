@@ -86,6 +86,37 @@ class Person {
             }
         }
     }
+
+    totalSpentForCars() {
+        const personFirstName = this.data.firstname;
+        let euroPrice = 0;
+        let totalCarsPrice = 0;
+
+        for (let i = 0; i < this.data.cars.length; i++) {
+            const car = this.data.cars[i];
+            //sumas litais padalinti is 3.45
+            if (car.currency === 'Litas') {
+                euroPrice = car.price / 3.45;
+                totalCarsPrice += euroPrice;
+            }
+            //konvertuotas sumas sudeti su kaina, kuri duotaatitinka salyga 
+            if (car.currency === 'Euros') {
+                totalCarsPrice += car.price;
+            }
+        }
+        console.log(`${personFirstName} has spent ${totalCarsPrice.toFixed(2)} Euros for his cars.`);
+    }
+
+    totalSpentForApartments() {
+        const personFirstName = this.data.firstname;
+        const apartmentPrice = this.data.address.price;
+        const apartmentCurrency = this.data.address.currency;
+        console.log(`${personFirstName} has spent ${apartmentPrice} ${apartmentCurrency} for his apartments.`);
+    }
+
+    totalSpendings() {
+
+    }
 }
 
 module.exports = Person;
