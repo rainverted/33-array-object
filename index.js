@@ -1,5 +1,5 @@
-const data = require('./data');
-const Person = require('./Person');
+const data = require('./data.js');
+const Person = require('./Person.js');
 
 const jonas = new Person(data);
 
@@ -24,8 +24,8 @@ jonas.lastCar();
 jonas.apartmentPrice();
 // Jonas has an apartment for 500000 Euros.
 
-jonas.chidren();
-// This is a chidren of Jonas Jonaitis:
+jonas.children();
+// This is a children of Jonas Jonaitis:
 // 1. Ona Onaite (70)
 // 2. Petras Patraitis (80)
 // 3. Alfas Marsietis (50)
@@ -33,7 +33,7 @@ jonas.chidren();
 jonas.aliveChildren();
 // Jonas Jonatis has only 2 children alive.
 
-jonas.autopark();
+jonas.autoPark();
 // This is Jonas cars:
 // 1. Audi 80 (red)
 // 2. Volvo S40 (black)
@@ -51,12 +51,12 @@ jonas.carPrice(1);
 jonas.carPrice(2);
 // Tesla S is purchased for 100000 Euros.
 
-jonas.totalSpentForCars();
-// KOMANTARAS: Litas -> Euras = 3.45
-// Jonas has spent 101739.13 Euros for his cars.
+// jonas.totalSpentForCars();
+// // KOMANTARAS: Litas -> Euras = 3.45
+// // Jonas has spent 101739.13 Euros for his cars.
 
-jonas.totalSpentForApartments();
-// Jonas has spent 500000 Euros for his apartments.
+// jonas.totalSpentForApartments();
+// // Jonas has spent 500000 Euros for his apartments.
 
-jonas.totalSpendings();
-// Jonas has spent 601739.13 Euros tottaly.
+// jonas.totalSpendings();
+// // Jonas has spent 601739.13 Euros tottaly.
