@@ -58,5 +58,5 @@ jonas.totalSpentForCars();
 jonas.totalSpentForApartments();
 // Jonas has spent 500000 Euros for his apartments.
 
-// jonas.totalSpendings();
-// // Jonas has spent 601739.13 Euros tottaly.
+jonas.totalSpendings();
+// Jonas has spent 601739.13 Euros tottaly.

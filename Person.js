@@ -99,10 +99,11 @@ class Person {
                 euroPrice = car.price / 3.45;
                 totalCarsPrice += euroPrice;
             }
-            //konvertuotas sumas sudeti su kaina, kuri duotaatitinka salyga 
+            //konvertuotas sumas sudeti su kaina, kuri atitinka duota salyga
             if (car.currency === 'Euros') {
                 totalCarsPrice += car.price;
             }
+            this.totalCarsPrice = totalCarsPrice;
         }
         console.log(`${personFirstName} has spent ${totalCarsPrice.toFixed(2)} Euros for his cars.`);
     }
@@ -115,7 +116,8 @@ class Person {
     }
 
     totalSpendings() {
-
+        const totalSpent = this.totalCarsPrice + this.data.address.price;
+        console.log(`${this.data.firstname} has spent ${totalSpent.toFixed(2)} Euros tottaly.`);
     }
 }
 
